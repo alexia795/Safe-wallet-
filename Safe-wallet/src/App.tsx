@@ -8,6 +8,7 @@ import WithdrawPanel from "./components/WithdrawPanel";
 
 function App() {
   const [signer, setSigner] = useState<ethers.Signer | null>(null);
+  const [contacts, setContacts] = useState<any[]>([]);
 
   useEffect(() => {
     const connectWallet = async () => {
@@ -27,24 +28,19 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <h1 className="text-3xl font-bold mb-6">Safe Wallet Dashboard</h1>
-      {signer ? <SyncPanel signer={signer} /> : <p>Connecting wallet...</p>}
+      {signer ? (
+        <>
+          <Dashboard signer={signer} />
+          <SyncPanel signer={signer} />
+          <AddressBook setContacts={setContacts} />
+          <SettingsPanel />
+          <WithdrawPanel signer={signer} contacts={contacts} />
+        </>
+      ) : (
+        <p>Connecting wallet...</p>
+      )}
     </div>
   );
 }
-return (
-  <div className="min-h-screen bg-gray-100 p-6">
-    <h1 className="text-3xl font-bold mb-6">Safe Wallet Dashboard</h1>
-    {signer ? (
-      <>
-        <Dashboard signer={signer} />
-        <SyncPanel signer={signer} />
-        <AddressBook />
-        <SettingsPanel />
-      </>
-    ) : (
-      <p>Connecting wallet...</p>
-    )}
-  </div>
-);
 
 export default App;
