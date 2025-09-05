@@ -25,6 +25,10 @@ useEffect(() => {
   };
   secureLogin();
 }, []);
+import { getProvider } from "./utils/chains";
+
+const provider = getProvider("polygon");
+const signer = provider.getSigner();
 
 <ToastContainer position="top-right" autoClose={5000} />
 
