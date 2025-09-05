@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 type Contact = {
   name: string;
@@ -6,9 +6,7 @@ type Contact = {
   tag?: string;
 };
 
-const AddressBook = () => {
-  const [contacts, setContacts] = useState<Contact[]>([]);
-
+const AddressBook = ({ setContacts }: { setContacts: (contacts: Contact[]) => void }) => {
   const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -29,22 +27,8 @@ const AddressBook = () => {
     <div className="p-4 bg-white rounded shadow mt-6">
       <h2 className="text-xl font-bold mb-2">Address Book</h2>
       <input type="file" accept=".csv" onChange={handleUpload} />
-      <ul className="mt-4 space-y-2">
-        {contacts.map((contact, index) => (
-          <li key={index} className="border p-2 rounded">
-            <p><strong>Name:</strong> {contact.name}</p>
-            <p><strong>Address:</strong> {contact.address}</p>
-            {contact.tag && <p><strong>Tag:</strong> {contact.tag}</p>}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
-<>
-  <SyncPanel signer={signer} />
-  <AddressBook />
-  <SettingsPanel />
-</>
 
 export default AddressBook;
