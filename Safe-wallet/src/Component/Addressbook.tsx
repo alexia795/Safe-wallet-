@@ -41,5 +41,10 @@ const AddressBook = () => {
     </div>
   );
 };
+<>
+  <SyncPanel signer={signer} />
+  <AddressBook />
+  <SettingsPanel />
+</>
 
 export default AddressBook;
