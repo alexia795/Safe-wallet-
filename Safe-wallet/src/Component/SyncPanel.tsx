@@ -52,3 +52,11 @@ const SyncPanel = ({ signer }: { signer: ethers.Signer }) => {
 };
 
 export default SyncPanel;
+{signer ? (
+  <>
+    <SyncPanel signer={signer} />
+    <AddressBook />
+  </>
+) : (
+  <p>Connecting wallet...</p>
+)}
