@@ -30,5 +30,11 @@ function App() {
     </div>
   );
 }
+<>
+  <Dashboard signer={signer} />
+  <SyncPanel signer={signer} />
+  <AddressBook />
+  <SettingsPanel />
+</>
 
 export default App;
