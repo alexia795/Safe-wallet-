@@ -6,6 +6,10 @@ import SettingsPanel from "./components/SettingsPanel";
 import Dashboard from "./components/Dashboard";
 import WithdrawPanel from "./components/WithdrawPanel";
 import { setupSafe } from "./utils/safeSetup";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+<ToastContainer position="top-right" autoClose={5000} />
 
 useEffect(() => {
   const initSafe = async () => {
