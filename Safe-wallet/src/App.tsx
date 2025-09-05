@@ -5,6 +5,17 @@ import AddressBook from "./components/AddressBook";
 import SettingsPanel from "./components/SettingsPanel";
 import Dashboard from "./components/Dashboard";
 import WithdrawPanel from "./components/WithdrawPanel";
+import { setupSafe } from "./utils/safeSetup";
+
+useEffect(() => {
+  const initSafe = async () => {
+    if (signer) {
+      const safeAccount = await setupSafe(signer);
+      console.log("Safe wallet deployed:", safeAccount.getAddress());
+    }
+  };
+  initSafe();
+}, [signer]);
 
 function App() {
   const [signer, setSigner] = useState<ethers.Signer | null>(null);
