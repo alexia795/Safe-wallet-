@@ -4,6 +4,7 @@ import SyncPanel from "./components/SyncPanel";
 import AddressBook from "./components/AddressBook";
 import SettingsPanel from "./components/SettingsPanel";
 import Dashboard from "./components/Dashboard";
+import WithdrawPanel from "./components/WithdrawPanel";
 
 function App() {
   const [signer, setSigner] = useState<ethers.Signer | null>(null);
