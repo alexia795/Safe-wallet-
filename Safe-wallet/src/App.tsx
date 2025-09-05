@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import SyncPanel from "./components/SyncPanel";
+import AddressBook from "./components/AddressBook";
 
 function App() {
   const [signer, setSigner] = useState<ethers.Signer | null>(null);
