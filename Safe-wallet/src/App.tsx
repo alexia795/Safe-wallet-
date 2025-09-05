@@ -8,6 +8,11 @@ import WithdrawPanel from "./components/WithdrawPanel";
 import { setupSafe } from "./utils/safeSetup";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { addLog } from "./utils/auditLog";
+
+addLog("Safe Created", `Address: ${safe.getAddress()}`);
+addLog("Transaction Sent", `To: ${to}, Value: ${value}`);
+addLog("Error", error.message);
 
 <ToastContainer position="top-right" autoClose={5000} />
 
