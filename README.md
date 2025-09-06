@@ -49,6 +49,7 @@ Deploy effortlessly with **Vercel** for blazing-fast performance.
 }
 
 # Project Structure
+
 SafeWalletPro/
 ├── public/
 │   └── index.html
