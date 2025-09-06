@@ -32,8 +32,7 @@ Deploy effortlessly with **Vercel** for blazing-fast performance.
 
 ### 🔧 `vercel.json` Configuration
 
-```json
-{
+``{
   "builds": [
     {
       "src": "package.json",
@@ -47,6 +46,7 @@ Deploy effortlessly with **Vercel** for blazing-fast performance.
     }
   ]
 }
+
 
 # Project Structure
 
