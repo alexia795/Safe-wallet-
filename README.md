@@ -6,24 +6,29 @@
 
 ## 🔐 Key Features  
 
-- **Multi-Signature Security** → Protect assets with configurable signer thresholds.  
-- **Auto-Approval Engine** → Automates routine transaction approvals.  
-- **Contract Sync & Upgrade** → Ensures compatibility with latest Safe contracts.  
-- **Address Book Integration** → Manage trusted wallets and contract addresses.  
-- **Verified Withdrawal Flow** → Enforces signer verification before fund transfers.  
-- **Interactive Dashboard** → Track balances, proposals, and pending actions.  
-- **Advanced Settings** → Configure gas policies, thresholds, and execution rules.  
+🔐 Key Features
+
+- **Multi-Signature Security** → Protect assets with configurable signer thresholds.
+- **Auto-Approval Engine** → Automates routine transaction approvals.
+- **Contract Sync & Upgrade** → Ensures compatibility with latest Safe contracts.
+- **Address Book Integration** → Manage trusted wallets and contract addresses.
+- **Verified Withdrawal Flow** → Enforces signer verification before fund transfers.
+- **Interactive Dashboard** → Track balances, proposals, and pending actions.
+- **Advanced Settings** → Configure gas policies, thresholds, and execution rules.
+
 
 ---
 
 ## 📜 Scripts  
 
-| Command           | Description |
-|-------------------|-------------|
-| `npm start`       | Launches the app locally (development mode). |
-| `npm run build`   | Builds the app for production. |
-| `npm test`        | Runs unit and integration tests. |
-| `npm run eject`   | Ejects configuration (CRA-only, optional). |
+📜 Scripts
+
+| Command         | Description                             |
+|-----------------|-----------------------------------------|
+| `npm start`     | Launches the app locally (development mode). |
+| `npm run build` | Builds the app for production.          |
+| `npm test`      | Runs unit and integration tests.        |
+| `npm run eject` | Ejects configuration (CRA-only, optional). |
 
 ---
 
