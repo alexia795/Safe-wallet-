@@ -52,37 +52,36 @@ We recommend deploying with **[Vercel](https://vercel.com/)** for seamless integ
     }
   ]
 }
-
-🔧 Tech Stack
-	•	Frontend: React / TypeScript
-	•	Safe SDK: For contract interactions & transaction building
-	•	Backend (optional): Node.js / Express for API automation
-	•	Deployment: Vercel / GitHub Actions
-
-⸻
-
-📌 Next Steps
-	•	Add support for multi-chain Safe deployments (Ethereum, Arbitrum, Polygon).
-	•	Integrate Reown + WalletConnect for universal wallet onboarding.
-	•	Implement proposal auto-sync with Safe contracts.
-
-⸻
-
-👥 Contributors
-
-Name   Role
-James  Architect & Lead Developer
-You?   Open to contributors!
-
-📄 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+```
 
 ---
 
-✨ Now you can:  
-1. Copy this into `README.md`.  
-2. Remove all conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).  
-3. Mark the conflict as resolved in GitHub.  
+## 🔧 Tech Stack  
 
-Do you want me to also **make a minimal PR-ready diff patch** (so you can just apply it directly instead of pasting)?
+- **Frontend**: React / TypeScript  
+- **Safe SDK**: For contract interactions & transaction building  
+- **Backend (optional)**: Node.js / Express for API automation  
+- **Deployment**: Vercel / GitHub Actions  
+
+---
+
+## 📌 Next Steps  
+
+- Add support for **multi-chain Safe deployments** (Ethereum, Arbitrum, Polygon).  
+- Integrate **Reown + WalletConnect** for universal wallet onboarding.  
+- Implement **proposal auto-sync** with Safe contracts.  
+
+---
+
+## 👥 Contributors  
+
+| Name   | Role                         |
+|--------|------------------------------|
+| James  | Architect & Lead Developer   |
+| You?   | Open to contributors!        |
+
+---
+
+## 📄 License  
+
+This project is licensed under the **MIT License**. See the LICENSE file for details.  
