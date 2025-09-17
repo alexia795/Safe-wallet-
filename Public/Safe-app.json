@@ -1,14 +1,14 @@
-mkdir -p public
-cat > public/safe-app.json << 'EOF'
 {
-  "id": "safe-wallet-pro",
   "name": "Safe Wallet Pro",
-  "url": "https://safe-wallet-pro.vercel.app",
-  "iconUrl": "/icon.svg",
-  "description": "Enterprise-grade multi-signature digital wallet for managing crypto assets with enhanced security and automation.",
-  "providedBy": {
-    "name": "alexia795",
-    "url": "https://github.com/alexia795/Safe-wallet-pro"
-  }
+  "description": "An advanced multi-signature Safe App with enterprise-grade security, WalletConnect, and automation.",
+  "iconPath": "logo.png",
+  "safeAppsPermissions": [
+    {
+      "type": "ethereum-provider"
+    }
+  ],
+  "safeAppsSdkVersion": "8.1.0",
+  "url": "https://safe-wallet-pro.vercel.app/",
+  "chains": [1],
+  "features": ["safe-apps-sdk", "walletconnect"]
 }
-EOF
