@@ -1,6 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import SyncPanel from "./components/SyncPanel";
+import { AppKitProvider } from '@reown/appkit';
+import ConnectWalletButton from './components/ConnectWalletButton'; // Your login component
+
+const metadata = {
+  name: 'Safe Wallet Pro',
+  url: 'https://appkit-lab.reown.com/library/multichain-all/',
+  icons: ['https://appkit-lab.reown.com/library/multichain-all/logo.png'],
+  redirect: {
+    native: 'safewalletpro://',
+    universal: 'https://appkit-lab.reown.com/library/multichain-all/',
+    linkMode: true,
+  },
+};
+
+function App() {
+  return (
+    <AppKitProvider
+      projectId="8a81e704ed22e53debea9db88f91bfcb"
+      metadata={metadata}
+      options={{ loginMethods: ['wallet', 'email', 'google'] }}
+    >
+      <ConnectWalletButton />
+    </AppKitProvider>
+  );
+}
+
+export default App;
+
 import AddressBook from "./components/AddressBook";
 import SettingsPanel from "./components/SettingsPanel";
 import Dashboard from "./components/Dashboard";
