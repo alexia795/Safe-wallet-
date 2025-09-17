@@ -1,14 +1,19 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build"
+      "src": "next.config.js",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
     {
+      "src": "/safe-app.json",
+      "dest": "/public/safe-app.json"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/"
     }
   ]
 }
