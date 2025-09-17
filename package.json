@@ -9,17 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@safe-global/protocol-kit": "^1.3.0",
-    "@safe-global/safe-core-sdk": "^4.0.0",
-    "@safe-global/safe-ethers-adapters": "^1.8.0",
-    "ethers": "^6.9.0",
-    "next": "14.2.3",
+    "@safe-global/protocol-kit": "^1.2.0",
+    "@safe-global/api-kit": "^1.2.0",
+    "@safe-global/safe-apps-provider": "^0.18.1",
+    "@safe-global/safe-apps-sdk": "^8.1.0",
+    "@walletconnect/ethereum-provider": "^2.11.0",
+    "ethers": "^6.13.2",
+    "next": "14.2.4",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.2.3",
-    "typescript": "5.4.5"
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.4",
+    "typescript": "^5.6.2"
   }
 }
