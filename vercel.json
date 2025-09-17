@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "safe-wallet-pro",
   "builds": [
     {
       "src": "next.config.js",
@@ -8,12 +9,14 @@
   ],
   "routes": [
     {
-      "src": "/safe-app.json",
-      "dest": "/public/safe-app.json"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/$1"
     }
-  ]
+  ],
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "Safe Wallet Pro",
+    "NEXT_PUBLIC_NETWORK": "mainnet",
+    "NEXT_PUBLIC_RPC_URL": "https://eth-mainnet.g.alchemy.com/v2/XuPZE3fUgxJ2AwDHYiSLzBVscOVcg9dy",
+    "NEXT_PUBLIC_SAFE_OWNER": "0xFDf84a0e7D07bC56f7De56696fc409704cC83a24"
+  }
 }
