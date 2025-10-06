@@ -1,5 +1,4 @@
 # 🔐 Safe Wallet Pro: Enterprise Multi-Sig Digital Asset Management
-
 [![Build Status](https://img.shields.io/github/actions/workflow/status/your-org/safe-wallet-pro/ci.yml?branch=main)]()
 [![License](https://img.shields.io/github/license/your-org/safe-wallet-pro)]()
 [![Vercel](https://img.shields.io/badge/deployed%20on-vercel-000?logo=vercel)](https://vercel.com)
