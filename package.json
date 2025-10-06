@@ -10,12 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@safe-global/protocol-kit": "^1.2.0",
-    "@safe-global/api-kit": "^1.2.0",
-    "@safe-global/safe-core-sdk": "^4.0.0",
-    "@safe-global/safe-ethers-adapters": "^1.8.0",
-    "@safe-global/safe-apps-provider": "^0.18.1",
-    "@safe-global/safe-apps-sdk": "^8.1.0",
+    "@safe-global/protocol-kit": "^6.1.1",
+    "@safe-global/api-kit": "^4.0.0",
+    "@safe-global/safe-core-sdk-types": "^3.0.0",
+    "@safe-global/safe-apps-provider": "^0.20.0",
+    "@safe-global/safe-apps-sdk": "^9.0.0",
     "@walletconnect/ethereum-provider": "^2.11.0",
     "ethers": "^6.13.2",
     "next": "14.2.4",
